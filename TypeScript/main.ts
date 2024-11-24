@@ -1,8 +1,9 @@
-import Hanoi from "./Problems/55-hanoi";
+import CompressString from "./Problems/61-compress-string";
 
 export default function Main() {
-  let answer;
-  console.log(Hanoi(3, 1, 2, 3, answer));
+  let init_data = "aaabbbbcdddd";
+  let answer = CompressString(init_data);
+  console.log("answer:", answer);
   return;
 }
 
