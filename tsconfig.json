@@ -1,13 +1,14 @@
 {
-  "include": ["TypeScript/**/*"],
+  "include": ["TypeScript"],
   "exclude": ["node_modules", "**/*.test.ts"],
   "compilerOptions": {
     "outDir": "build",
-    "target": "ES2020", // 최신 JavaScript로 변환
-    "module": "ESNext", // ES 모듈 사용
+    "target": "ES6", // 최신 JavaScript로 변환
+    "lib": ["ES6", "DOM"],
+    "module": "CommonJS", // ES 모듈 사용
     "strict": true, // 엄격한 타입 검사
+    "allowJs": true,
     "esModuleInterop": true, // ES 모듈 호환성
-    "moduleResolution": "node", // 모듈 해석 방식
-    "skipLibCheck": true // 라이브러리 검사 건너뜀
+    "moduleResolution": "node" // 모듈 해석 방식
   }
 }
