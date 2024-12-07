@@ -16,3 +16,12 @@ export default function CompressString(init: string): string {
 
   return answer;
 }
+/* 
+문자열을 입력받고 연속되는 문자열을 압축해서 표현하고 싶습니다.
+
+입력
+aaabbbbcdddd
+
+출력
+a3b4c1d4
+ */
